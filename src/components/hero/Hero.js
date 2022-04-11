@@ -1,7 +1,9 @@
 import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
-
+import Select from 'react-select'
+import { filterData } from '../../utils/filterData';
 import './Hero.css'
+
 
 const Hero = () => {
     return (
@@ -12,15 +14,16 @@ const Hero = () => {
                 <form className='search'>
 
                     <div>
-                        <input type='text' placeholder='Enter Keyword..' />
+          
+                    {filterData.map((filter) => (
+                        <div className='filter' >{filter.queryName}
+                        <Select name={filter.queryName} options={filter.items} onChange={e => console.log(filter.queryName,e.value)}/>
+                        </div>
+                    
+                    ))}
                     </div>
-                    <div className='radio'> 
-                        <input type='radio' checked />
-                        <label>Buy</label>
-                        <input type='radio'  />
-                        <label>Rent</label>
-                        <button type='submit'><AiOutlineSearch className='icon'/></button>
-                    </div>
+                    <button type='submit'><AiOutlineSearch className='icon'/></button>
+                    
                 </form>
             </div>
         </div>

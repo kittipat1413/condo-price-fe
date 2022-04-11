@@ -29,6 +29,10 @@
     padding: 1rem;
 }
 
+.filter{
+    display: flex;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     text-transform: capitalize;
@@ -43,9 +47,10 @@
     display: flex;
     background-color: #fff;
     color: #333;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    border: 10px solid #ccc;
     padding: 4px;
     border-radius: 8px;
 }
