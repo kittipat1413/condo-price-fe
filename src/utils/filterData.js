@@ -133,3 +133,46 @@ export const filterData = [
       queryName: 'categoryExternalID',
     },
   ];
+
+export const defaultFilter = [
+      {
+        name: 'purpose',
+        value: "",
+      },
+      {
+        name: 'rentFrequency',
+        value: "",
+      },
+      {
+        name: 'minPrice',
+        value: "",
+      },
+      {
+        name: 'maxPrice',
+        value: "",
+      },
+      {
+        name: 'areaMax',
+        value: "",
+      },
+      {
+        name: 'roomsMin',
+        value: "",
+      },
+      {
+        name: 'bathsMin',
+        value: "",
+      },
+      {
+        name: 'sort',
+        value: "",
+      },
+      {
+        name: 'locationExternalIDs',
+        value: "",
+      },
+      {
+        name: 'categoryExternalID',
+        value: "",
+      },
+];
